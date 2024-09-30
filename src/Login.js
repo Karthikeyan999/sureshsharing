@@ -62,6 +62,7 @@ const Login = () => {
             console.log(response.data)
             if(response.data && response.data.userName){
                 console.log("welcome to new world")
+                console.log("welcome to new world")
                 navigate('/dashboard', { state: { userName: response.data.userName} });
             }else{
                 alert('Invalid username or password');
